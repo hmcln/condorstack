@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+  push:
+    cmds:
+      - npx drizzle-kit push
+  push-prod:
+    cmds:
+      - npx drizzle-kit push --config=drizzle.prod.config.ts
+  studio:
+    cmds:
+      - npx drizzle-kit studio
+  studio-prod:
+    cmds:
+      - npx drizzle-kit studio --config=drizzle.prod.config.ts
